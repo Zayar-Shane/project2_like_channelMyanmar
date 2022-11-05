@@ -279,6 +279,7 @@ header {
     margin: 50px auto 0;
     display: flex;
     justify-content: space-between;
+    padding: 0 50px;
 }
 
 .footer .social {
@@ -307,4 +308,88 @@ header {
     text-align: center;
     margin-top: 20px;
     padding: 5px 0;
+}
+
+/* media query */
+@media (max-width: 1080px) {
+    .home-text {
+        padding: 0 100px;
+    }
+}
+
+@media (max-width: 960px) {
+
+    .home-text {
+        padding: 0 4%;
+    }
+
+    .home-text h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 867px) {
+    .navbar {
+        display: none;
+    }
+
+    .home-text h1 {
+        font-size: 2rem;
+    }
+
+    .home-text .btn {
+        padding: 0.4rem 1rem;
+    } 
+
+    .home-text .play .bx{
+        font-size: 1.5rem;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 520px) {
+    header {
+        padding: 5px 50px;
+    }
+
+    header .btn {
+        padding: 0.2rem 1rem;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 396px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+    }
+
+    .footer .social .bx{
+        font-size: 1.5rem;
+    }
+
+    .contact {
+        margin-top: 10px;
+    }
+
+    .contact h2 {
+        font-size: 1rem;
+    }
+
+    .contact .btn {
+        padding: 5px 10px;
+    }
+
+    header .btn {
+        padding: 5px 10px;
+    }
+
+    .codelab p {
+        font-size: 0.5rem;
+    }
 }
